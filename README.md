@@ -16,5 +16,5 @@ Stos tech:
 Giga tutorial(?):
 https://www.youtube.com/watch?v=YYLQbp7kQnQ
 
-Czujnik: DH11
+Czujnik: DH11 
 Moduł: ESP32 WROOM
