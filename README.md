@@ -12,3 +12,6 @@ Stos tech:
 - SQL
 - RestAPI
 - LateX
+
+Giga tutorial(?):
+https://www.youtube.com/watch?v=YYLQbp7kQnQ
