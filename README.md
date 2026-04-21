@@ -13,9 +13,9 @@ Stos tech:
 - RestAPI
 - LateX
 
-Giga tutorial(?):
-https://www.youtube.com/watch?v=YYLQbp7kQnQ
+Giga tutorial(?):  
+https://www.youtube.com/watch?v=YYLQbp7kQnQ  
+https://www.youtube.com/watch?v=ebJpXs2-WgM
 
-Czujnik: DH11
-
+Czujnik: DH11  
 Moduł: ESP32 WROOM
