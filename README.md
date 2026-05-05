@@ -1,11 +1,6 @@
 # Projekt-zespolowy
 Projekt
 
-Dodukentacja co ma byc:
-- motywacja czyli że chcemy zdać
-- cele
-- wymagania funkcjonalne i nie i jakościowe
-
 Stos tech:
 - spring
 - Docker/Podman
@@ -20,7 +15,7 @@ https://www.youtube.com/watch?v=ebJpXs2-WgM
 Czujnik: DH11  
 Moduł: ESP32 WROOM
 
-W dokumentacji:  
+## W dokumentacji:  
 - zdjęcie urządzenia
 - grafika z połączeniami (nie musi być płytka stykowa)
 - EasyEDA projekt schematu + PCB + widok 3D
