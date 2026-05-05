@@ -11,7 +11,7 @@ Giga tutorial(?):
 https://www.youtube.com/watch?v=YYLQbp7kQnQ  
 https://www.youtube.com/watch?v=ebJpXs2-WgM
 
-Sprzęt:
+Sprzęt:  
 Czujnik: DH11  
 Moduł: ESP32 WROOM
 
