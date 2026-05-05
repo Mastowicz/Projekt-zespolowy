@@ -1,19 +1,19 @@
 # Projekt-zespolowy
 
-Stos tech:
+### Stos technologiczny:
 - spring
 - Docker/Podman
 - MariaDB/MySQL
 - RestAPI
 - LaTeX
 
-Giga tutorial(?):  
-https://www.youtube.com/watch?v=YYLQbp7kQnQ  
-https://www.youtube.com/watch?v=ebJpXs2-WgM
-
 ### Sprzęt:  
 Czujnik: DH11  
 Moduł: ESP32 WROOM
+
+### Giga tutorial(?):  
+https://www.youtube.com/watch?v=YYLQbp7kQnQ  
+https://www.youtube.com/watch?v=ebJpXs2-WgM
 
 ## W dokumentacji:  
 - zdjęcie urządzenia
