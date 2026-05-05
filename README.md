@@ -1,5 +1,4 @@
 # Projekt-zespolowy
-Projekt
 
 Stos tech:
 - spring
@@ -12,6 +11,7 @@ Giga tutorial(?):
 https://www.youtube.com/watch?v=YYLQbp7kQnQ  
 https://www.youtube.com/watch?v=ebJpXs2-WgM
 
+Sprzęt:
 Czujnik: DH11  
 Moduł: ESP32 WROOM
 
