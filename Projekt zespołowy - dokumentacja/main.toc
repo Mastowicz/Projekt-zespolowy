@@ -1,0 +1,34 @@
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Wstęp}{4}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Cel i zakres pracy}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Cel projektu}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Cele szczegółowe}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Zakres pracy}{5}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Analiza wymagań i projekt rozwiązania}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Wymagania funkcjonalne}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Wymagania niefunkcjonalne}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Wymagania jakościowe}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Architektura rozwiązania}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Stos technologiczny}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Wykorzystany sprzęt}{7}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Opis działania aplikacji}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Środowisko i struktura projektu}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Przepływ danych oraz integracja}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Interfejs użytkownika}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Fragmenty kodu źródłowego}{10}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Instrukcja instalacji i użytkowania}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wymagania sprzętowe i programowe}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Instrukcja instalacji}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Instrukcja użytkowania}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Obsługa aplikacji mobilnej}{12}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Obsługa interfejsu webowego}{12}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Kontrola stanu połączenia}{12}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {5}Testy i weryfikacja}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Testy funkcjonalne}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Testy niefunkcjonalne}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Wyniki testów}{13}{section.5.3}%
+\contentsline {chapter}{Podsumowanie}{14}{chapter*.9}%
+\contentsline {chapter}{Netografia}{15}{chapter*.12}%
+\contentsline {chapter}{Spis rysunk\'ow}{16}{section*.13}%
+\contentsline {chapter}{Spis tabel}{17}{section*.14}%
+\contentsline {chapter}{Spis listingów}{19}{chapter*.15}%

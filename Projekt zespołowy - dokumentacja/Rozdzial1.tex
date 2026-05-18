@@ -1,0 +1,26 @@
+\chapter{Cel i zakres pracy}
+Jasne wyznaczenie kierunków działania pozwala na precyzyjne zaplanowanie etapów pracy i uniknięcie zbędnych funkcjonalności. Dokumentacja ta definiuje granice projektu oraz to, co dokładnie zostanie dostarczone po jego zakończeniu.
+\section{Cel projektu}
+Głównym celem projektu było opracowanie i wdrożenie kompletnego, rozproszonego systemu pozwalającego na zdalny odczyt, archiwizację i wizualizację danych pomiarowych z fizycznego czujnika temperatury. System miał łączyć w sobie elementy sprzętowe, serwerowe oraz klienckie, tworząc spójną całość gotową do działania w warunkach lokalnych.
+
+\section{Cele szczegółowe}
+W~ramach realizacji projektu wyznaczono następujące cele szczegółowe:
+\begin{itemize}
+    \item zaprogramowanie mikrokontrolera ESP32 do obsługi czujnika pomiarowego oraz bezprzewodowego przesyłania danych przez Wi-Fi,
+    \item zaimplementowanie serwera backendowego w technologii Spring Boot, pełniącego rolę centralnego węzła komunikacyjnego,
+    \item konfiguracja i konteneryzacja relacyjnej bazy danych MySQL do trwałego przechowywania historii pomiarów,
+    \item stworzenie natywnej aplikacji mobilnej na system Android, umożliwiającej bieżący podgląd danych,
+    \item budowa responsywnego interfejsu webowego w formie strony internetowej do przeglądania dziennika zapisów,
+    \item integracja wszystkich modułów za pomocą protokołu HTTP i formatu danych JSON.
+\end{itemize}
+
+\section{Zakres pracy}
+Zakres pracy obejmuje następujące kroki:
+\begin{itemize}
+    \item konfiguracja warstwy sprzętowej obejmującej mikrokontroler ESP32 oraz czujnik temperatury,
+    \item implementacja logiki serwerowej wraz z obsługą endpointów REST API,
+    \item przygotowanie schematu bazy danych oraz skryptów łączących serwer z bazą MySQL,
+    \item opracowanie interfejsu graficznego i logiki komunikacyjnej dla aplikacji mobilnej Android,
+    \item przygotowanie frontendu webowego (HTML/CSS/JS) współpracującego z API serwera,
+    \item przeprowadzenie testów funkcjonalnych i weryfikacja poprawności przepływu danych w sieci lokalnej.
+\end{itemize}
