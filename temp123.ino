@@ -1,48 +1,58 @@
-/* 
- * ESP32 NodeMCU DHT11 - Humidity Temperature Sensor Example
- * https://circuits4you.com
- * 
- * References
- * https://circuits4you.com/2017/12/31/nodemcu-pinout/
- * 
- */
- 
+#include <HTTPClient.h>
+#include <WiFi.h>
 #include "DHTesp.h"
 
-#define DHTpin 15    //D15 of ESP32 DevKit
-
+#define DHTpin 15
 DHTesp dht;
 
-void setup()
-{
-  Serial.begin(115200);
-  Serial.println();
-  Serial.println("Status\tHumidity (%)\tTemperature (C)\t(F)\tHeatIndex (C)\t(F)");
-  
-  // Autodetect is not working reliable, don't use the following line
-  // dht.setup(17);
+const char* ssid     = "Wifi XPP";
+const char* password = "123456789";
 
-  // use this instead: 
-  dht.setup(DHTpin, DHTesp::DHT11); //for DHT11 Connect DHT sensor to GPIO 17
-  //dht.setup(DHTpin, DHTesp::DHT22); //for DHT22 Connect DHT sensor to GPIO 17
+unsigned long poprzedniCzas = 0;
+const long interwal = 60000; // wysyłaj co 60 sekund dla testu
+
+void setup() {
+  Serial.begin(115200);
+  dht.setup(DHTpin, DHTesp::DHT11);
+
+  // Ustawienie ESP32 jako Access Point
+  Serial.print("Tworzenie sieci WiFi: ");
+  Serial.println(ssid);
+  WiFi.softAP(ssid, password);
+
+  IPAddress IP = WiFi.softAPIP();
+  Serial.print("Adres IP punktu dostępu (ESP32): ");
+  Serial.println(IP); // To będzie 192.168.4.1
 }
 
-void loop()
-{
-  delay(dht.getMinimumSamplingPeriod());
+void wyslijDane(float temp) {
+    HTTPClient http;
+    
+    // Adres IP komputera w sieci utworzonej przez ESP32
+    // Zazwyczaj pierwszy podłączony klient dostaje 192.168.4.2
+    http.begin("http://192.168.4.2:8080/api/pomiary/arduino");
+    http.addHeader("Content-Type", "application/json");
 
-  float humidity = dht.getHumidity();
-  float temperature = dht.getTemperature();
+    String httpRequestData = "{\"temperatura\":" + String(temp) + "}";
 
-  Serial.print(dht.getStatusString());
-  Serial.print("\t");
-  Serial.print(humidity, 1);
-  Serial.print("\t\t");
-  Serial.print(temperature, 1);
-  Serial.print("\t\t");
-  Serial.print(dht.toFahrenheit(temperature), 1);
-  Serial.print("\t\t");
-  Serial.print(dht.computeHeatIndex(temperature, humidity, false), 1);
-  Serial.print("\t\t");
-  Serial.println(dht.computeHeatIndex(dht.toFahrenheit(temperature), humidity, true), 1);
+    int httpResponseCode = http.POST(httpRequestData);
+
+    if (httpResponseCode > 0) {
+        Serial.printf("Sukces, kod: %d\n", httpResponseCode);
+    } else {
+        Serial.printf("Błąd połączenia z komputerem: %s\n", http.errorToString(httpResponseCode).c_str());
+        Serial.println("Upewnij się, że komputer jest połączony z WiFi XPP!");
+    }
+    http.end();
+}
+
+void loop() {
+  unsigned long obecnyCzas = millis();
+  if (obecnyCzas - poprzedniCzas >= interwal) {
+    poprzedniCzas = obecnyCzas;
+    float temperature = dht.getTemperature();
+    if (!isnan(temperature)) {
+        wyslijDane(temperature);
+    }
+  }
 }
