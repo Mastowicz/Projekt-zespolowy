@@ -32,25 +32,25 @@ System został zaprojektowany zgodnie z podejściem mikroserwisowym.
 
 ## Główne moduły:
 
-### 🔹 Warstwa IoT
+### Warstwa IoT
 
 * ESP32 Wroom
 * Czujnik temperatury DHT11
 * Komunikacja HTTP/JSON
 
-### 🔹 Warstwa serwerowa
+### Warstwa serwerowa
 
 * Java + Spring Boot
 * REST API
 * Obsługa zapisu danych
 * Integracja z MySQL
 
-### 🔹 Warstwa danych
+### Warstwa danych
 
 * MySQL
 * Docker
 
-### 🔹 Warstwa kliencka
+### Warstwa kliencka
 
 * Aplikacja Android
 * Frontend webowy HTML/CSS/JS
