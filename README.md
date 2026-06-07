@@ -119,11 +119,7 @@ project/
 
 # 🐳 Uruchomienie backendu i bazy danych
 
-Przejdź do katalogu projektu:
-
-```bash
-cd docker
-```
+Przejdź do katalogu "container things" i uruchom go w terminalu.
 
 Uruchom kontenery:
 
