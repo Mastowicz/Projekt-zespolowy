@@ -55,7 +55,7 @@ Mikrokontroler został skonfigurowany w trybie punktu dostępowego, co oznacza, 
 
 
 \subsection{Warstwa serwerowa (Spring Boot)}
-Serwer pełni rolę pośrednika i archiwizatora. Jego zadaniem jest odebranie wartości liczbowej od ESP32 i dopisanie do niej brakujących informacji, takich jak aktualna data i godzina, ponieważ mikrokontroler nie posiada własnego zegara czasu rzeczywistego.
+Serwer pełni rolę pośrednika i archiwizatora. Jego zadaniem jest odebranie wartości liczbowej od ESP32 i dopisanie do niej brakujących informacji, takich jak aktualna data\\ i godzina, ponieważ mikrokontroler nie posiada własnego zegara czasu rzeczywistego.
 
 \begin{lstlisting}[language=Java, caption={Fragment kodu odpowiedzialny za odbieranie danych}, label={lst:receiveFromArduino}]
 @PostMapping("/arduino")
