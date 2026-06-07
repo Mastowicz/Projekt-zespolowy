@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Opis projektu
+## Opis projektu
 
 Projekt przedstawia kompletny system monitorowania temperatury oparty na architekturze mikroserwisowej. Rozwiązanie integruje urządzenia IoT z aplikacjami webowymi i mobilnymi, umożliwiając zbieranie, archiwizację oraz wizualizację danych pomiarowych w czasie rzeczywistym.
 
@@ -26,7 +26,7 @@ Dane z czujnika są przesyłane do serwera poprzez REST API, zapisywane w bazie 
 
 ---
 
-# 🏗️ Architektura systemu
+# Architektura systemu
 
 System został zaprojektowany zgodnie z podejściem mikroserwisowym.
 
@@ -57,7 +57,7 @@ System został zaprojektowany zgodnie z podejściem mikroserwisowym.
 
 ---
 
-# ⚙️ Technologie
+# Technologie
 
 | Obszar         | Technologie           |
 | -------------- | --------------------- |
@@ -71,7 +71,7 @@ System został zaprojektowany zgodnie z podejściem mikroserwisowym.
 
 ---
 
-# 📡 Schemat działania systemu
+# Schemat działania systemu
 
 1. ESP32 odczytuje temperaturę z czujnika DHT11.
 2. Dane są przesyłane do serwera metodą HTTP POST w formacie JSON.
@@ -81,7 +81,7 @@ System został zaprojektowany zgodnie z podejściem mikroserwisowym.
 
 ---
 
-# 📁 Struktura projektu
+# Struktura projektu
 
 ```bash
 project/
@@ -96,7 +96,7 @@ project/
 
 ---
 
-# 🚀 Instalacja i uruchomienie
+# Instalacja i uruchomienie
 
 ## 1. Wymagania
 
@@ -117,7 +117,7 @@ project/
 
 ---
 
-# 🐳 Uruchomienie backendu i bazy danych
+# Uruchomienie backendu i bazy danych
 
 Przejdź do katalogu "container things" i uruchom go w terminalu.
 
@@ -134,7 +134,7 @@ Po poprawnym uruchomieniu:
 
 ---
 
-# 📟 Konfiguracja ESP32
+# Konfiguracja ESP32
 
 1. Otwórz projekt w Arduino IDE.
 2. Uzupełnij:
@@ -152,7 +152,7 @@ http.begin("http://192.168.4.2:8080/api/pomiary/arduino");
 
 ---
 
-# 📱 Uruchomienie aplikacji Android
+# Uruchomienie aplikacji Android
 
 1. Otwórz projekt w Android Studio.
 2. Ustaw adres IP backendu.
@@ -167,7 +167,7 @@ Aplikacja:
 
 ---
 
-# 🌐 Uruchomienie interfejsu webowego
+# Uruchomienie interfejsu webowego
 
 Otwórz plik:
 
@@ -185,7 +185,7 @@ Interfejs umożliwia:
 
 ---
 
-# 🔌 REST API
+# REST API
 
 ## Wysłanie danych z ESP32
 
@@ -209,9 +209,9 @@ Zwraca listę wszystkich pomiarów.
 
 ---
 
-# 📊 Funkcjonalności
+# Funkcjonalności
 
-## ✅ Zrealizowane
+## Zrealizowane
 
 * komunikacja ESP32 ↔ serwer,
 * REST API,
@@ -225,7 +225,7 @@ Zwraca listę wszystkich pomiarów.
 
 ---
 
-# 🧪 Testy
+# Testy
 
 Przeprowadzone testy potwierdziły:
 
@@ -237,7 +237,7 @@ Przeprowadzone testy potwierdziły:
 
 ---
 
-# 📈 Możliwe rozszerzenia
+# Możliwe rozszerzenia
 
 Planowane kierunki rozwoju:
 
@@ -250,7 +250,7 @@ Planowane kierunki rozwoju:
 
 ---
 
-# 👨‍💻 Autorzy
+# Autorzy
 
 * Franciszek Dębski — IoT / PCB
 * Patryk Wilk — Backend / Web
@@ -258,7 +258,7 @@ Planowane kierunki rozwoju:
 
 ---
 
-# 📄 Licencja
+# Licencja
 
 Projekt edukacyjny realizowany w ramach studiów inżynierskich.
 
@@ -268,7 +268,7 @@ Rok: 2026
 
 ---
 
-# 📚 Dokumentacja
+# Dokumentacja
 
 Pełna dokumentacja projektu została przygotowana w systemie LaTeX i zawiera:
 
