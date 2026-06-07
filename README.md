@@ -8,7 +8,7 @@
 - LaTeX
 
 ### Sprzęt:  
-Czujnik: DH11  
+Czujnik: DHT11  
 Moduł: ESP32 WROOM
 
 ### Giga tutorial(?):  
