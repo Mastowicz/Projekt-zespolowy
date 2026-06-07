@@ -70,7 +70,14 @@ QR-006      & Wzorce projektowe: stosowanie odpowiednich wzorców projektowych.	
 \end{table}
 
 \section{Architektura rozwiązania}
-System opiera się na architekturze mikroserwisowej, gdzie każda część pełni określoną funkcję. Mikrokontroler działa jako nadawca danych, serwer jako zarządca i pośrednik, \\ a aplikacje klienckie jako odbiorcy. Taki podział pozwala na niezależną pracę nad każdym modułem. Komunikacja odbywa się przez standardowe zapytania HTTP, co czyni system uniwersalnym i łatwym w integracji.
+System opiera się na architekturze mikroserwisowej, gdzie każda część pełni określoną funkcję jak przedstawia rysunek \ref{fig:uml} z diageamem UML. Mikrokontroler działa jako nadawca danych, serwer jako zarządca i pośrednik, a aplikacje klienckie jako odbiorcy. Taki podział pozwala na niezależną pracę nad każdym modułem. Komunikacja odbywa się przez standardowe zapytania HTTP, co czyni system uniwersalnym i łatwym w integracji.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{rysunki/uml.png} 
+    \caption{Diagram UML architektury systemu}
+    \label{fig:uml} % Klucz dla grafiki PNG
+    \sourcefig{opracowanie własne}
+\end{figure}
 
 \section{Stos technologiczny}
 W celu realizacji projektu wybrano następujące technologie:
@@ -88,16 +95,42 @@ Do realizacji projektu wykorzystano następujące urządzenia:
     \item Mikrokontroler ESP32 Wroom.
     \item Czujnik temperatury DHT11.
     \item Komputer stacjonarny (serwer).
-    \item Smartfon z systemem Android (klient).
+    \item Smartfon z systemem Android (klient).\\
 \end{itemize}
 
-\pagebreak
-
-Jak pokazano na rysunku \ref{fig:esp32}, poniżej znajduje się wykorzystany w projekcie moduł ESP32 Wroom podłączony do czujnika DHT11.
+W celu realizacji projektu został wypożyczony zestaw ESP32 Wroom wraz z czujnikiem DHT11, który umożliwił odczyt danych pomiarowych i ich bezprzewodową transmisję do serwera. Jak pokazano na rysunku \ref{fig:esp32}, urządzenie zostało odpowiednio podłączone według schematu połączeń przedstawionego na rysunku \ref{fig:esp32_schemat} i przygotowane do pracy w ramach systemu monitorowania temperatury.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{rysunki/esp32.png} 
     \caption{ESP32 Wroom z czujnikiem DHT11}
     \label{fig:esp32} % Klucz dla grafiki PNG
     \sourcefig{opracowanie własne}
+\end{figure}
+
+Schemat połączeń elektrycznych pomiędzy mikrokontrolerem ESP32 a czujnikiem temperatury i wilgotności DHT11 przedstawiono na rysunku \ref{fig:esp32_schemat}. Linia danych (DAT) czujnika została podłączona do pinu GPIO15 mikrokontrolera, natomiast zasilanie zrealizowano poprzez wyprowadzenia 3V3 oraz GND.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{rysunki/schemat.png} 
+    \caption{Schemat połączeń ESP32 z czujnikiem DHT11}
+    \label{fig:esp32_schemat} % Klucz dla grafiki PNG
+    \sourcefig{opracowanie własne}
+\end{figure}
+
+\section{Schemat płytki PCB}
+Płytka PCB została zaprojektowana w programie EasyEDA, co pozwoliło na precyzyjne rozmieszczenie elementów oraz przygotowanie modelu do ewentualnej produkcji. Schemat płytki przedstawiono na rysunku \ref{fig:pcb}, gdzie widoczne są połączenia między mikrokontrolerem ESP32 a czujnikiem DHT11.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{rysunki/pcb2d.png} 
+    \caption{Schemat płytki PCB}
+    \label{fig:pcb} % Klucz dla grafiki PNG
+    \sourcefig{opracowanie własne (EasyEDA)}
+\end{figure}
+
+Sporządzona została też wizualizacja 3D płytki PCB, która umożliwia lepsze zrozumienie rozmieszczenia komponentów oraz ich wzajemnych połączeń. Jak pokazano na rysunku \ref{fig:pcb3d}, model 3D przedstawia szczegółowy układ elementów na płytce, co jest istotne dla dalszych etapów produkcji i montażu.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{rysunki/pcb3d.png} 
+    \caption{Wizualizacja przestrzenna płytki PCB}
+    \label{fig:pcb3d} % Klucz dla grafiki PNG
+    \sourcefig{opracowanie własne (EasyEDA)}
 \end{figure}

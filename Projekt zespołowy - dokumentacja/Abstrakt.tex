@@ -31,11 +31,15 @@
 \noindent
 \begin{tabular}{|p{5cm}|p{10cm}|}
 \hline
-\textbf{Tytuł projektu} & Aplikacja w architekturze mikroserwisowej\\
+\textbf{Tytuł projektu} & System monitorowania temperatury w architekturze mikroserwisowej\\
 \hline
 \textbf{Słowa kluczowe (max 5)} & informatyka, aplikacje mobilne, bazy danych\\
 \hline
-\textbf{Streszczenie (max 1400 znaków)} & Aplikacja w architekturze mikroserwisowej umożliwiająca integrację usług i komponentów w celu tworzenia skalowalnych i utrzymywanych systemów komunikacji między IoT a aplikacją webową i mobilną. Projekt obejmuje implementację mikroserwisów (serwer, baza danych), interfejsu użytkownika(Web) oraz integrację z urządzeniami IoT(ESP32) z czujnikiem. \\
+\textbf{Streszczenie (max 1400 znaków)} & Celem projektu było stworzenie systemu monitorowania temperatury opartego na architekturze mikroserwisowej. Rozwiązanie integruje urządzenia IoT z nowoczesnymi aplikacjami serwerowymi i klienckimi, tworząc spójny system przesyłu danych. W skład projektu wchodzi mikrokontroler ESP32, serwer Spring Boot, baza danych MySQL oraz dwa interfejsy użytkownika: aplikacja mobilna na system Android i strona internetowa.
+
+Dane pomiarowe są przesyłane przez mikrokontroler do centralnego serwera, gdzie po uzupełnieniu o czas zapisu trafiają do bazy danych. Użytkownik może w czasie rzeczywistym śledzić aktualne odczyty oraz przeglądać pełną historię pomiarów. Obie aplikacje klienckie posiadają funkcję automatycznego odświeżania danych, co zapewnia stały dostęp do najświeższych informacji bez konieczności ręcznej obsługi systemu.
+
+Projekt potwierdził skuteczność integracji różnych technologii w jeden stabilny system komunikacji. Stworzona architektura charakteryzuje się wysoką wydajnością oraz modularnością, co pozwala na jej łatwą rozbudowę o dodatkowe funkcjonalności w przyszłości. Wszystkie założenia funkcjonalne zostały zrealizowane, a system jest gotowy do pracy w lokalnym środowisku deweloperskim.\\
 \hline
 \end{tabular}
 

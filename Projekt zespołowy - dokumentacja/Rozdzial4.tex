@@ -12,12 +12,13 @@ Aby system mógł pracować wydajnie i bez opóźnień, urządzenia wykorzystywa
 \section{Instrukcja instalacji}
 Proces instalacji systemu został podzielony na etapy, które należy wykonywać w określonej kolejności. Jest to kluczowe, ponieważ aplikacje klienckie oraz mikrokontroler wymagają aktywnego i skonfigurowanego serwera do poprawnego działania.
 \begin{itemize}
-	\item Uruchomienie bazy danych: Należy uruchomić kontener MySQL za pomocą Dockera lub włączyć moduł MySQL w panelu kontrolnym XAMPP. Baza powinna pracować na porcie 8081.
-	\item Konfiguracja i start serwera: Należy uruchomić aplikację Spring Boot z poziomu środowiska IDE lub za pomocą wiersza poleceń. Serwer automatycznie stworzy niezbędne tabele w bazie danych przy pierwszym uruchomieniu.
+	\item Uruchomienie serwera (Docker): Należy uruchomić kontener MySQL i Spring Boot za pomocą Dockera. W tym celu uruchom program Docker Desktop, otwórz folder "container things", a następnie w terminalu i wpisz komendę "docker-compose up --build".
 	\item Programowanie mikrokontrolera: Korzystając z Arduino IDE, należy wgrać kod do układu ESP32. W kodzie źródłowym należy wcześniej wpisać nazwę i hasło lokalnej sieci Wi-Fi oraz adres IP komputera, na którym działa serwer.
 	\item Instalacja aplikacji mobilnej: Plik aplikacji należy skompilować w Android Studio\\ i zainstalować na telefonie. W ustawieniach połączenia (klasa ApiClient/MainActivity) musi znajdować się ten sam adres IP serwera, co w przypadku ESP32.
 	\item Uruchomienie interfejsu webowego: Plik index.html należy otworzyć w dowolnej nowoczesnej przeglądarce internetowej na komputerze podłączonym do tej samej sieci.
 \end{itemize}
+
+\pagebreak
 
 \section{Instrukcja użytkowania}
 Korzystanie z gotowego systemu jest intuicyjne, ponieważ większość procesów związanych z przesyłaniem i wyświetlaniem danych odbywa się automatycznie. Po prawidłowym uruchomieniu wszystkich modułów, użytkownik może monitorować temperaturę w sposób opisany poniżej.

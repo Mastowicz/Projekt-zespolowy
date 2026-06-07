@@ -24,3 +24,22 @@ Zakres pracy obejmuje następujące kroki:
     \item przygotowanie frontendu webowego (HTML/CSS/JS) współpracującego z API serwera,
     \item przeprowadzenie testów funkcjonalnych i weryfikacja poprawności przepływu danych w sieci lokalnej.
 \end{itemize}
+
+\section{Podział zadań i harmonogram}
+Prace nad systemem zostały podzielone między trzech członków zespołu w taki sposób, aby każdy odpowiadał za kluczową warstwę architektury mikroserwisowej: sprzętową, serwerową lub kliencką.
+
+\begin{itemize}
+    \item Franciszek Dębski (Programista IoT i projektant PCB): Odpowiadał za warstwę sprzętową, w tym zaprogramowanie mikrokontrolera ESP32 w języku C++ oraz zaprojektowanie modelu płytki w EasyEDA (rysunek \ref{fig:pcb} i \ref{fig:pcb3d}). Przygotował również diagram UML (rysunek \ref{fig:uml}).
+    \item Patryk Wilk (Główny programista): Zrealizował warstwę serwerową w Spring Boot, skonfigurował bazę danych MySQL w Dockerze oraz stworzył stronę internetową. Zarządzał harmonogramem w programie GanttProject (rysunek \ref{fig:gantt}).
+    \item Krystian Zając (Programista mobilny i Menadżer): Opracował natywną aplikację na system Android oraz przygotował pełną dokumentację techniczną w systemie LaTeX. Odpowiadał za plik README oraz prezentację końcową projektu.\\
+\end{itemize}
+
+Realizacja projektu została rozłożona w czasie zgodnie z ustalonym planem prac, co pozwoliło na zachowanie płynności i terminową integrację wszystkich modułów systemu. Wykres Gantta przedstawiony ponieżej na rysunku \ref{fig:gantt}, pokazuje szczegółowy podział na etapy, ramy czasowe poszczególnych zadań oraz kluczowe kamienie milowe projektu.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{rysunki/gantt.png} 
+    \caption{Wykres Gantta}
+    \label{fig:gantt} % Klucz dla grafiki PNG
+    \sourcefig{opracowanie własne (GanttProject)}
+\end{figure}
